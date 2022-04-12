@@ -50,7 +50,7 @@ const AddTaskScreen = ({ navigation, route }) => {
         {
             alert('please enter valid due string(ex: next monday)')
         }
-        else if(!priority.includes('1' || '2' || '3' || '4'))
+        else if((Number(priority) > 4 || Number(priority) < 1))
         {
             alert('Please add priority between 1(normal) to 4(high)')
         }
